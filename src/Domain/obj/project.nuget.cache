@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pm4j8gR5edcRHbT9EiEtMV4z7UE7GZH2gXfAbfF9+My8B3ghVJzbjP7o0p3CHcW5TFDMcuqsZ+WAu1BlZDbY4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://10.100.1.167:8686/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
