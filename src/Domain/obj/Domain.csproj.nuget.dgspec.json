@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj": {}
+    "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj": {
+    "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ventu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ventu\\AppData\\Roaming\\NuGet\\NuGet.Config",

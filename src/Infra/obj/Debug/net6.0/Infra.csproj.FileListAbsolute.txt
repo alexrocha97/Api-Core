@@ -1,0 +1,17 @@
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\bin\Debug\net6.0\Infra.deps.json
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\bin\Debug\net6.0\Infra.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\bin\Debug\net6.0\Infra.pdb
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\bin\Debug\net6.0\Application.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\bin\Debug\net6.0\Domain.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\bin\Debug\net6.0\Application.pdb
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\bin\Debug\net6.0\Domain.pdb
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\Infra.csproj.AssemblyReference.cache
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\Infra.AssemblyInfoInputs.cache
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\Infra.AssemblyInfo.cs
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\Infra.csproj.CoreCompileInputs.cache
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\Infra.csproj.CopyComplete
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\Infra.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\refint\Infra.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\Infra.pdb
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Infra\obj\Debug\net6.0\ref\Infra.dll

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "VgI6By17p4hFU9sZyBsndqqKXIcDrWQh0soVEGyIw5dfIk2fXHjhghCf0EytZG0f6tuyI2fBGW8Ucl6HtcfSRA==",
+  "dgSpecHash": "7HsOchk/wA8b//YefohrCl16AG7UyaHPbw0x95ZoFS+prXPKX3TlVyKCZ5Fhe4kDPzXHaGS8faG1QFkP9nY5CA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ventu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": [
     {
       "code": "NU1803",
