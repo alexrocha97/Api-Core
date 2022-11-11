@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 using Application.Common.Interfaces.Autenticacao;
 using Application.Common.Interfaces.Services;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Infra
@@ -14,9 +11,13 @@ namespace Infra
     public class JwtTokenGenerator : IJwtTokenGenerator
     {
         private readonly IDateTimeProvider _dateProvider;
-        public JwtTokenGenerator(IDateTimeProvider dateProvider)
+        private readonly JwtSettings _jwtSettings;
+        public JwtTokenGenerator(
+            IDateTimeProvider dateProvider,
+            IOptions<JwtSettings> jwtOptions)
         {
             _dateProvider = dateProvider;
+            _jwtSettings = jwtOptions.Value;
         }
 
         public string GenerateToken(
@@ -25,7 +26,7 @@ namespace Infra
             string lastName)
         {
             var siginingCredentials = new SigningCredentials(
-                new SymmetricSecurityKey(Encoding.UTF8.GetBytes("super-secret-key")),
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Secret)),
                     SecurityAlgorithms.HmacSha256);
 
             var claims = new[]
@@ -37,8 +38,9 @@ namespace Infra
             };
 
             var securityToken = new JwtSecurityToken(
-                issuer: "helloword",
-                expires: _dateProvider.UtcNow.AddMinutes(60),
+                issuer: _jwtSettings.Issuer,
+                audience: _jwtSettings.Audience,
+                expires: _dateProvider.UtcNow.AddMinutes(_jwtSettings.ExpiryMinutes),
                 claims: claims,
                 signingCredentials: siginingCredentials
                 ); 

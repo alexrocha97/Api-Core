@@ -32,3 +32,9 @@ C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_P
 C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
