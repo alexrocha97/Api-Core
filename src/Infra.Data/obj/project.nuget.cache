@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WfKYdnOcXCExKCx4VOGjTBavW3MwiV/b8QG3dmiDONEpdoaqTAEjvo8GGDSEKEqypoyuhmuq/sGaaQBjreDKCw==",
+  "dgSpecHash": "fpOQLgqyGEGi13MF0o4B0n8750eiYouxLBGm2e4Z6RTSRxUW7YOmg4ucg9uNMKiwPgxb//go59QP6FSJwiXEvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Infra\\Infra.csproj",
+  "projectFilePath": "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\src\\Infra.Data\\Infra.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {

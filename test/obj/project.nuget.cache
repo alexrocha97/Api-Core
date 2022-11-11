@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ue5FTmEZ3rj9J/DtBywM8d48RYnDXABXg+ohdFPHZmbv2UrcGDceSJQ1BTJXkVlekM28SBOeXSWYlmQ+P4TwxA==",
+  "dgSpecHash": "KHdR1cIHd22EKIgsgXeUZPOzKryqfRx9zLTNiDLEGZxxEHXG01bl3yuvcXIHpcII5F+xhEF6uf6Q0tmDWQxIxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\test\\test.csproj",
+  "projectFilePath": "c:\\Users\\ventu\\OneDrive\\Documentos\\Meus dados pessoais\\Repositórios\\02 - PROJ_Pessoais\\03 - Projeto_Andamento\\ApiCore\\test\\test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ventu\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\ventu\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
