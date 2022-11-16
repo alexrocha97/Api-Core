@@ -25,10 +25,10 @@ namespace Web.Controllers
             );
 
             var response = new AutenticacaoReposta(
-                auteResult.Id,
-                auteResult.FirstName,
-                auteResult.LastName,
-                auteResult.Email,
+                auteResult.user.Id,
+                auteResult.user.FirstName,
+                auteResult.user.LastName,
+                auteResult.user.Email,
                 auteResult.Token
             );
 
@@ -44,10 +44,10 @@ namespace Web.Controllers
             );
 
             var response = new AutenticacaoReposta(
-                auteResult.Id,
-                auteResult.FirstName,
-                auteResult.LastName,
-                auteResult.Email,
+                auteResult.user.Id,
+                auteResult.user.FirstName,
+                auteResult.user.LastName,
+                auteResult.user.Email,
                 auteResult.Token
             );
 

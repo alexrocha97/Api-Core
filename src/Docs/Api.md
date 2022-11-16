@@ -1,4 +1,26 @@
 # POST
+```json
+{
+    "email": "alexAdmin@gmail.com",
+    "password": "1234567"
+}
+```
+```js
+200 OK
+```
+
+```json
+{
+  "id": "f10e4c06-86d3-45fe-9391-f66dc6b2e2e4",
+  "firstName": "Alex",
+  "lastName": "Rocha",
+  "email": "adminAlexRocha@gmail.com",
+  "token": "ey...Pp3E"
+}
+```
+
+
+```json
 {
     "name": "Vegan Sunshine",
     "description": "Vegan everything! Join us for a healthy breakfast..",
@@ -14,7 +36,10 @@
         "Cookie"
     ]
 }
+```
+
 # GET
+```json
 {
     "id": "00000000-0000-0000-0000-000000000000",
     "name": "Vegan Sunshine",
@@ -32,7 +57,9 @@
         "Cookie"
     ]
 }
+```
 # PUT
+```json
 {
     "name": "Vegan Sunshine",
     "description": "Vegan everything! Join us for a healthy breakfast..",
@@ -48,6 +75,9 @@
         "Cookie"
     ]
 }
+```
 # DELETE
+```json
 {id}
+```
 
