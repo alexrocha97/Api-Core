@@ -1,12 +1,17 @@
 using Application;
 using Infra;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Web.Erros;
 
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services
     .AddApplication()
     .AddInfra(builder.Configuration);
+    // builder.Services.AddControllers(options => options.Filters.Add<ErrosFilters>());
     builder.Services.AddControllers();
+    builder.Services.AddSingleton<ProblemDetailsFactory, DetalhesDeErros>();
 }
 
 
@@ -32,6 +37,12 @@ var app = builder.Build();
 #endregion
 
 {
+    // app.UseMiddleware<ManipulacaoError>();
+    app.UseExceptionHandler("/error");
+    // app.Map("/error", (HttpContext httpContext) =>{
+    //     Exception? exception = httpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
+    //     return Results.Problem();
+    // });
     app.UseHttpsRedirection();
     app.MapControllers();
     app.Run();

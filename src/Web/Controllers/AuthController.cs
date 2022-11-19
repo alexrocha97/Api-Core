@@ -1,6 +1,7 @@
 using Application.Servicos.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Web.Autenticacao;
+using Web.Filters;
 
 namespace Web.Controllers
 {
