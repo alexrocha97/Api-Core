@@ -1,7 +1,10 @@
+using Application.Common.Erros;
 using Application.Common.Interfaces.Autenticacao;
 using Application.Common.Interfaces.Pesistencia;
 using Application.Servicos.Interfaces;
 using Domain;
+using FluentResults;
+using OneOf;
 
 namespace Application.Servicos.Autenticacoes
 {
@@ -17,7 +20,7 @@ namespace Application.Servicos.Autenticacoes
             _userRepository = userRepository;
         }
 
-        public AuteResult Registro(
+        public Result<AuteResult> Registro(
             string firstName, 
             string lastName, 
             string email, 
@@ -26,7 +29,7 @@ namespace Application.Servicos.Autenticacoes
             // Check if user already exists
             if(_userRepository.GetUserByEmail(email) is not null)
             {
-                throw new Exception("O usuário com e-mail fornecido já existe.");
+                return Result.Fail<AuteResult>(new[]  { new DuplicateEmailError() });
             }
 
             // Create user (generate unique ID)
@@ -51,7 +54,9 @@ namespace Application.Servicos.Autenticacoes
         {
             // 1 - Validar se o usuário existe
             if(_userRepository.GetUserByEmail(email) is not User user){
+
                 throw new Exception("O e-mail fornecido não existe.");
+                // throw new DuplicateEmailExcepetion();
             }
             // 2 - Validar se password(senha) está correto
             if(user.Password != password){

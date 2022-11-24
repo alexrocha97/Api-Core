@@ -1,5 +1,9 @@
+using Application.Common.Erros;
+using Application.Servicos.Autenticacoes;
 using Application.Servicos.Interfaces;
+using FluentResults;
 using Microsoft.AspNetCore.Mvc;
+using OneOf;
 using Web.Autenticacao;
 using Web.Filters;
 
@@ -18,22 +22,38 @@ namespace Web.Controllers
         [HttpPost("registro")]
         public IActionResult Registro(RegisterSolicitar registerSolicitar)
         {
-            var auteResult = _AuteServico.Registro(
+            Result<AuteResult> registerResult = _AuteServico.Registro
+            (
                 registerSolicitar.FirstName,
                 registerSolicitar.LastName,
                 registerSolicitar.Email,
                 registerSolicitar.Password
             );
 
-            var response = new AutenticacaoReposta(
-                auteResult.user.Id,
-                auteResult.user.FirstName,
-                auteResult.user.LastName,
-                auteResult.user.Email,
-                auteResult.Token
-            );
+            if(registerResult.IsSuccess){
+                return Ok(MapAuthResult(registerResult.Value));
+            }
 
-            return Ok(response);
+            var firstError = registerResult.Errors[0];
+            if(firstError is DuplicateEmailError){
+                return Problem(
+                    statusCode: StatusCodes.Status409Conflict,
+                    detail: firstError.Message
+                );
+            }
+
+            return Problem();
+        }
+
+        private static AutenticacaoReposta MapAuthResult(AuteResult authResult)
+        {
+            return new AutenticacaoReposta(
+                authResult.user.Id,
+                authResult.user.FirstName,
+                authResult.user.LastName,
+                authResult.user.Email,
+                authResult.user.Password
+            );
         }
 
         [HttpPost("login")]

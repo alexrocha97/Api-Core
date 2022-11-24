@@ -48,3 +48,6 @@ C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_P
 C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\System.Security.Permissions.dll
 C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\obj\Debug\net6.0\Web.RazorAssemblyInfo.cache
 C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\obj\Debug\net6.0\Web.RazorAssemblyInfo.cs
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\OneOf.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\FluentResults.dll
+C:\Users\ventu\OneDrive\Documentos\Meus dados pessoais\Repositórios\02 - PROJ_Pessoais\03 - Projeto_Andamento\ApiCore\src\Web\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
