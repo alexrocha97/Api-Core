@@ -1,18 +1,17 @@
 using Application.Common.Erros;
 using Application.Common.Interfaces.Autenticacao;
 using Application.Common.Interfaces.Pesistencia;
-using Application.Servicos.Interfaces;
+using Application.Servicos.Interfaces.Commamd;
 using Domain;
 using FluentResults;
-using OneOf;
 
-namespace Application.Servicos.Autenticacoes
+namespace Application.Servicos.Autenticacoes.Commamd
 {
-    public class AuteServico : IAuteServico
+    public class AuteCommandServico : IAuteCommandServico
     {
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
         private readonly IUserRepository _userRepository;
-        public AuteServico(
+        public AuteCommandServico(
             IJwtTokenGenerator jwtTokenGenerator,
             IUserRepository userRepository)
         {
@@ -50,7 +49,7 @@ namespace Application.Servicos.Autenticacoes
                 token);
         }
 
-        public AuteResult Login(string email, string password)
+        public Result<AuteResult> Login(string email, string password)
         {
             // 1 - Validar se o usuário existe
             if(_userRepository.GetUserByEmail(email) is not User user){
@@ -60,7 +59,7 @@ namespace Application.Servicos.Autenticacoes
             }
             // 2 - Validar se password(senha) está correto
             if(user.Password != password){
-                throw new Exception("Senha inválida..");
+                return Result.Fail<AuteResult>(new[] { new SenhaIncorretaError() });
             }
             // 3 - Criação do token jwt
             var token = _jwtTokenGenerator.GenerateToken(user);

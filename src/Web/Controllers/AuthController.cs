@@ -1,11 +1,10 @@
 using Application.Common.Erros;
 using Application.Servicos.Autenticacoes;
-using Application.Servicos.Interfaces;
+using Application.Servicos.Interfaces.Commamd;
+using Application.Servicos.Interfaces.Queries;
 using FluentResults;
 using Microsoft.AspNetCore.Mvc;
-using OneOf;
 using Web.Autenticacao;
-using Web.Filters;
 
 namespace Web.Controllers
 {
@@ -13,16 +12,18 @@ namespace Web.Controllers
     [Route("auth")]
     public class AuthController : ControllerBase
     {
-        private readonly IAuteServico _AuteServico;
-        public AuthController(IAuteServico AuteService)
+        private readonly IAuteCommandServico _AuteCommandServico;
+        private readonly IAuteQueryServico _AuteQueryServico;
+        public AuthController(IAuteQueryServico AuteQueryService, IAuteCommandServico AuteCommandServico)
         {
-            _AuteServico = AuteService;
+            _AuteQueryServico = AuteQueryService;
+            _AuteCommandServico = AuteCommandServico;
         }
 
         [HttpPost("registro")]
         public IActionResult Registro(RegisterSolicitar registerSolicitar)
         {
-            Result<AuteResult> registerResult = _AuteServico.Registro
+            Result<AuteResult> registerResult = _AuteCommandServico.Registro
             (
                 registerSolicitar.FirstName,
                 registerSolicitar.LastName,
@@ -45,6 +46,34 @@ namespace Web.Controllers
             return Problem();
         }
 
+        [HttpPost("login")]
+        public IActionResult Login(LoginSolicitar loginSolicitar)
+        {
+            Result<AuteResult> LoginResult = _AuteQueryServico.Login(
+                loginSolicitar.Email,
+                loginSolicitar.Password
+            );
+
+            if(LoginResult.IsSuccess){
+                return Ok(MapAuthResultLogin(LoginResult.Value));
+            }
+
+            var fistErrorLogin = LoginResult.Errors[0];
+            if(fistErrorLogin is SenhaIncorretaError){
+                return Problem(
+                    statusCode: StatusCodes.Status409Conflict,
+                    detail: fistErrorLogin.Message
+                );
+            }else if(fistErrorLogin is EmailIncorretoError){
+                 return Problem(
+                    statusCode: StatusCodes.Status409Conflict,
+                    detail: fistErrorLogin.Message
+                );
+            }
+
+            return Problem();
+        }
+
         private static AutenticacaoReposta MapAuthResult(AuteResult authResult)
         {
             return new AutenticacaoReposta(
@@ -56,23 +85,15 @@ namespace Web.Controllers
             );
         }
 
-        [HttpPost("login")]
-        public IActionResult Login(LoginSolicitar loginSolicitar)
-        {
-            var auteResult = _AuteServico.Login(
-                loginSolicitar.Email,
-                loginSolicitar.Password
-            );
-
-            var response = new AutenticacaoReposta(
+        private static AutenticacaoReposta MapAuthResultLogin(AuteResult auteResult){
+            
+            return new AutenticacaoReposta(
                 auteResult.user.Id,
                 auteResult.user.FirstName,
                 auteResult.user.LastName,
                 auteResult.user.Email,
                 auteResult.Token
             );
-
-            return Ok(response);
         }
     }
 }

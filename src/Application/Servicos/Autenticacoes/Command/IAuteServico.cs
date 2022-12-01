@@ -1,12 +1,11 @@
-using Application.Common.Erros;
 using Application.Servicos.Autenticacoes;
 using FluentResults;
 
-namespace Application.Servicos.Interfaces
+namespace Application.Servicos.Interfaces.Commamd
 {
-    public interface IAuteServico
+    public interface IAuteCommandServico
     {
         Result<AuteResult> Registro(string firstName, string lastName, string email, string password);
-        AuteResult Login(string email, string password);
+        Result<AuteResult> Login(string email, string password);
     }
 }
